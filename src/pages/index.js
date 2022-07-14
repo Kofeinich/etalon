@@ -7,8 +7,8 @@ import "../templates/css/normalise.css"
 
 const IndexPage = () => (
   <>
-    <Seo title="Юридические услуги в Новороссийске" />
-    <Footer/>
+      <Seo title="Юридические услуги в Новороссийске" />
+      <Footer/>
   </>
 )
 
