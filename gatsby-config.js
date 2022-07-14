@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Юридические услуги в Новороссийске`,
+    description: `Владимир Конюхов. Юридические услуги в Краснодарском крае и Новороссийске. Более 20 лет решения сложных юридических вопросов. За это время был накоплен богатый и глубокий опыт в юридической сфере, позволяющий разрешать успешно даже самые сложные судебные дела. Стоит открыть юристу все тонкости ситуации – а он, храня адвокатскую тайну, предложит не одно, а несколько продуктивных решений.`,
+    author: `@Kofeinich`,
+    siteUrl: `https://advocate-etalon.ru/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,8 +31,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        /**
+         * @property {boolean} [resetCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        resetCSS: true,
+        /**
+         * @property {boolean} [isUsingColorMode=true]
+         * if false, this plugin will not use <ColorModeProvider />
+         */
+        isUsingColorMode: true,
+      },
+    },
   ],
 }
