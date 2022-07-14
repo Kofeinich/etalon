@@ -1,0 +1,12 @@
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.border {
+    border: 5px solid rgba(215, 215, 215, 0.99);
+}
+
+.filter {
+    filter: contrast(100%) brightness(75%) url('#purple-warm');
+}

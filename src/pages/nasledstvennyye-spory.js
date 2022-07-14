@@ -1,12 +1,15 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from 'react';
 import Seo from "../components/seo"
+import { chakra } from '@chakra-ui/react';
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 const HerPage = () => (
-    <>
+    <chakra.section id={'nas'} about={'Наследственные споры в Новороссийске и Краснодарском крае'}>
         <Seo title="Наследственные споры" />
-        <Link to="/">Go back to the homepage</Link>
-    </>
+        <Header/>
+        <Footer/>
+    </chakra.section>
 )
 
 export default HerPage
