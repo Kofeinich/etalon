@@ -4,6 +4,7 @@ import {
 import React from 'react';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Footer = () => {
     return (
@@ -11,7 +12,8 @@ const Footer = () => {
             <Flex
                 borderTop={'2px solid #ffb300'}
                 w={'100vw'}
-                bg={'#07575b'}
+                bg={'#c4dfe6'}
+                color={'#2d334a'}
             >
                 <Flex
                     w={'100%'}
@@ -19,8 +21,6 @@ const Footer = () => {
                 >
                     <Flex
                         w={'100%'}
-                        fontFamily={"CasperItalic"}
-                        color={'white'}
                         maxWidth={'1000px'}
                         justify={'space-between'}
                     >
@@ -30,11 +30,12 @@ const Footer = () => {
                             ml={'5vw'}
                             fontSize='xs'
                             display={'column'}
-                            fontFamily={'CasperBoldItalic'}
+                            fontFamily={'CasperRegular'}
                         >
                             <Text
                                 as='i'
-                                color={'#ffb300'}
+                                color={'#272343'}
+                                fontFamily={"CasperBoldItalic"}
                             >
                                 © 2019-2022 Все права защищены
                             </Text>
@@ -61,7 +62,7 @@ const Footer = () => {
                                 <Box
                                     fontSize={'40px'}
                                     mr={'14px'}
-                                    color={'#c4dfe6'}
+                                    color={'#272343'}
                                     _hover={{
                                         color: '#ffb300'
                                     }}
@@ -71,13 +72,24 @@ const Footer = () => {
                             </a>
                             <Box
                                 fontSize={'40px'}
-                                color={'#c4dfe6'}
+                                mr={'8px'}
+                                color={'#272343'}
                                 _hover={{
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
                             >
                                 <WhatsAppIcon fontSize={'large'} />
+                            </Box>
+                            <Box
+                                fontSize={'40px'}
+                                color={'#272343'}
+                                _hover={{
+                                    color: '#ffb300',
+                                    cursor: 'pointer',
+                                }}
+                            >
+                                <TelegramIcon fontSize={'large'} />
                             </Box>
                         </Flex>
                     </Flex>

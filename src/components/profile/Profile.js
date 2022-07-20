@@ -40,7 +40,7 @@ const Profile = ({ className }) => (
                 >
                     <Flex
                         w={'100vw'}
-                        h={'calc(40vh)'}
+                        h={'calc(40vh - 80px)'}
                         fontFamily={'Verdana'}
                         justify={'center'}
                     >
@@ -55,7 +55,7 @@ const Profile = ({ className }) => (
                             maxWidth={'800px'}
                             p={'0px'}
                             m={'0px'}
-                            h={'calc(40vh)'}
+                            h={'calc(40vh - 80px)'}
                             w={'100%'}
                             color={"#eceff1"}
                         >
