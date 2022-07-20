@@ -13,8 +13,12 @@ const HeaderBlockButton = () => {
         <Flex
             justify={'center'}
         >
-            <Logo/>
-            <MailButton/>
+            <Box>
+                <Logo/>
+            </Box>
+            <Box mt={'6px'} ml={'3px'}>
+                <MailButton/>
+            </Box>
         </Flex>
     )
 }

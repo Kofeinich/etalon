@@ -49,6 +49,7 @@ const About = ({ className }) => (
                     <Flex
                         justify={'center'}
                         p={'10px'}
+
                     >
                         <Img
                             fixed={data.file.childImageSharp.fixed}

@@ -1,9 +1,13 @@
 import React from 'react';
 import {
     Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent,
-    DrawerCloseButton, Flex, Text, VStack, Button,
+    DrawerCloseButton, Flex, Text, VStack, Button, Box,
 } from "@chakra-ui/react";
 import { Link } from "gatsby"
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 export default function DrawerWrapper({
                                           placement = "right",
@@ -24,37 +28,197 @@ export default function DrawerWrapper({
                 finalFocusRef={btnRef}
             >
                 <DrawerOverlay />
-                <DrawerContent alignItems="center">
-                    <DrawerCloseButton alignSelf="end" mx={15} my={15} />
-                    <DrawerHeader my={15}>
-                        <Text as="p">{title}</Text>
+                <DrawerContent
+                    alignItems="center"
+                    bg={'#c4dfe6'}
+                    fontFamily={'CasperRegular'}
+                    color={'#2d334a'}
+                >
+                    <DrawerCloseButton alignSelf="end" mx={15} my={3} />
+                    <DrawerHeader
+                        w={'100%'}
+                        bg={'#c4dfe6'}
+                    >
+                        <Flex
+                            jusify={'center'}
+                            w={'100%'}
+                        >
+                            <Flex
+                                justify={'space-between'}
+                            >
+                                <Box
+                                    fontSize={'40px'}
+                                    mr={'14px'}
+                                    color={'#272343'}
+                                    _hover={{
+                                        color: '#ffb300'
+                                    }}
+                                >
+                                    <PermPhoneMsgIcon fontSize={'large'}/>
+                                </Box>
+                                <Box>
+                                    <a style={{color: '#272343', outline: 'none', cursor: 'pointer', _hover: '#ffb300',}} href="tel:+79180675105">
+                                        +7 (918) 067-51-05
+                                    </a>
+                                    <Box
+                                        color={'#ffb300'}
+                                        mr={'20px'}
+                                        ml={'10px'}
+                                    >
+                                        <Text mb={'0px'} mt={'0px'} align={'left'} fontSize={'12px'} > Компетентно</Text>
+                                        <Text mt={'0px'} align={'left'} fontSize={'12px'} > Удобно</Text>
+                                        <Text mb={'0px'} align={'left'} fontSize={'12px'} > Просто</Text>
+                                    </Box>
+                                </Box>
+                            </Flex>
+                        </Flex>
                     </DrawerHeader>
-                    <DrawerBody>
-                        <VStack alignItems="left" spacing={4}>
+                    <DrawerBody
+                        w={'100%'}
+                        bg={'white'}
+                    >
+                        <VStack alignItems="left" spacing={2.5}>
                             <Link to='/'>
-                                <Button variant='text' >Главная</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Главная
+                                </Button>
                             </Link>
                             <Link to='/arbitrazhnaya-praktika'>
-                                <Button variant='text' >Арбитраж</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Арбитраж
+                                </Button>
                             </Link>
                             <Link to='/semeynyye-spory'>
-                                <Button variant='text' >Семейные споры</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Семейные споры
+                                </Button>
                             </Link>
                             <Link to='/nasledstvennyye-spory'>
-                                <Button variant='text' >Наследственные споры</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Наследственные споры
+                                </Button>
                             </Link>
                             <Link to='/sdelki-s-nedvizhimostyu'>
-                                <Button variant='text' >Недвижимость</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Недвижимость
+                                </Button>
                             </Link>
                             <Link to='/sudebnyye-spory'>
-                                <Button variant='text' >Судебные споры</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Судебные споры
+                                </Button>
                             </Link>
                             <Link to='/vzyskaniye-dolgov'>
-                                <Button variant='text' >Взыскание долгов</Button>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Взыскание долгов
+                                </Button>
                             </Link>
                         </VStack>
                     </DrawerBody>
-                    <DrawerFooter>{footer}</DrawerFooter>
+                    <DrawerFooter
+                        bg={'#c4dfe6'}
+                        display={'column'}
+                    >
+                        <Flex
+                            w={'100%'}
+                            justify={'center'}
+                        >
+                            <Text>
+                                Контакты
+                            </Text>
+                        </Flex>
+                        <Flex
+                            w={'100%'}
+                            justify={'center'}
+                        >
+                            <Flex
+                                justify={'space-between'}
+                            >
+                                <a href="tel:+79180675105">
+                                    <Box
+                                        fontSize={'40px'}
+                                        mr={'14px'}
+                                        color={'#272343'}
+                                        _hover={{
+                                            color: '#ffb300'
+                                        }}
+                                    >
+                                        <PhoneInTalkIcon fontSize={'large'} />
+                                    </Box>
+                                </a>
+                                <Box
+                                    fontSize={'40px'}
+                                    mr={'8px'}
+                                    color={'#272343'}
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    <WhatsAppIcon fontSize={'large'} />
+                                </Box>
+                                <Box
+                                    fontSize={'40px'}
+                                    color={'#272343'}
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    <TelegramIcon fontSize={'large'} />
+                                </Box>
+                            </Flex>
+                        </Flex>
+                    </DrawerFooter>
                 </DrawerContent>
             </Drawer>
         </Flex>

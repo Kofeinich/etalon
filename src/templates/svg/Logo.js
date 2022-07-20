@@ -10,7 +10,7 @@ const Logo = (props) => (
     >
         <path
             style={{
-                fill: "#66a5ad",
+                fill: "#c4dfe6",
                 fillOpacity: 1,
                 strokeLinejoin: "miter",
             }}

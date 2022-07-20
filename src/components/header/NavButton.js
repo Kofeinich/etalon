@@ -9,8 +9,15 @@ export default function NavButton() {
     const btnRef = React.useRef();
     return (
         <Flex as={'nav'}>
-            <Button ref={btnRef} onClick={onOpen}>
-                <IoMdMenu size="26px" />
+            <Button
+                ref={btnRef}
+                onClick={onOpen}
+                bg={'#c4dfe6'}
+                color={'#272343'}
+                mt={'6px'}
+                h={'44px'}
+            >
+                <IoMdMenu size="18px" />
             </Button>
             <Drawer isOpen={isOpen} onClose={onClose} finalFocusRef={btnRef}>
                 <DrawerWrapper/>

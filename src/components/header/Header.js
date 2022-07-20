@@ -11,7 +11,7 @@ export default function Header() {
             position={'sticky'}
             h={'80px'}
             bg={'white'}
-            px="6"
+            px="2"
             py="6"
             z-index='5000'
             align="center"

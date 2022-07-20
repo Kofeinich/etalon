@@ -10,25 +10,27 @@ import EmailMobileModal from "./MailModal";
 const MailButton = () => {
 
     const { isOpen, onOpen, onClose } = useDisclosure()
-    let bgCol = '#07575b'
-    let borderC = '2px solid #07575b'
+    let bgCol = '#ffb300'
 
     return (
-        <Box position={'static'}>
+        <Box
+            position={'static'}
+            fontFamily={'CasperRegular'}
+        >
             <Button
                 _hover={{
-                    border: '2px solid #c4dfe6'
+                    border: '2px solid #272343'
                 }}
                 onClick={onOpen}
-                h="42px"
+                h="44px"
                 position={'static'}
-                w="215px"
+                w="170px"
                 borderRadius="4px"
-                border={borderC}
+                border={'none'}
                 bg={bgCol}
                 z-index='55'
             >
-                <Text color="white" fontFamily={'Verdana'} fontSize="12px" >Записаться на консультацию</Text>
+                <Text color="#272343" fontSize="16px" >Задать вопрос</Text>
             </Button>
             <Modal isOpen={isOpen} onClose={onClose}>
                 <EmailMobileModal isOpen={isOpen} onClose={onClose}/>

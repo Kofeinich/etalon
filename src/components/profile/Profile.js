@@ -41,7 +41,7 @@ const Profile = ({ className }) => (
                     <Flex
                         w={'100vw'}
                         h={'calc(40vh - 80px)'}
-                        fontFamily={'Verdana'}
+                        fontFamily={'CasperRegular'}
                         justify={'center'}
                     >
                         {/*<Img
@@ -67,7 +67,7 @@ const Profile = ({ className }) => (
                                     mb="0px"
                                     align={'center'}
                                     fontSize='3xl'
-                                    fontFamily={'Verdana'}
+                                    fontFamily={'CasperBold'}
                                 >
                                     Владимир Конюхов
                                 </Text>
