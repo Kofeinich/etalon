@@ -7,12 +7,14 @@ import {
 } from '@chakra-ui/react';
 import SVGMan from "../../templates/svg/home-page/SVGMan";
 import SVGBooks from "../../templates/svg/home-page/SVGBooks";
+import useWindowWidth from "../window";
 
 
 const Man = () => {
+    const w = useWindowWidth()
     let fsH='34px'
     let fs = '18px'
-    if (window.innerWidth < 520){
+    if (w < 520){
         fsH='22px'
         fs='16px'
     }
@@ -47,6 +49,7 @@ const Man = () => {
                             align={'center'}
                             mb={'0px'}
                             fontFamily={'CasperBoldItalic'}
+                            mt={'5px'}
                         >
                             Что мне делать сейчас?
                         </Text>
@@ -63,12 +66,12 @@ const Man = () => {
 
     let padAll = '5vw'
 
-    if (window.innerWidth < 600){
+    if (w < 600){
         padAll = '5vw'
     }
 
 
-    if (window.innerWidth < 1000){
+    if (w < 1000){
         picture = <Box
             w={'90%'}
             color={'#2d334a'}

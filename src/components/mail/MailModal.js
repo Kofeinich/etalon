@@ -2,18 +2,22 @@ import CloseIcon from '@mui/icons-material/Close';
 import {Box, FormLabel, FormErrorMessage, FormHelperText, Input, Flex, ModalOverlay, ModalBody, ModalContent, FormControl, Text, useDisclosure} from "@chakra-ui/react";
 import React, { useState } from 'react';
 import EmailForm from "./EmailForm";
+import useWindowWidth from "../window";
 
 const MailModal = ({isOpen, onClose}) => {
 
+
+    const w = useWindowWidth()
     let m = '20px'
     let mt = '100px'
-    if (window.innerWidth > 440){
-        let width = window.innerWidth
+
+    if (w > 440){
+        let width = w
         let eps = (width - 400)/2
         m = eps
     }
 
-    if (window.innerHeight > 700){
+    if (w > 700){
         mt = '170px'
     }
 
@@ -22,8 +26,7 @@ const MailModal = ({isOpen, onClose}) => {
     return (
         <>
             <ModalOverlay
-                bg='#c4dfe6.500'
-                backdropFilter='blur(2px) hue-rotate(340deg)'
+                backdropFilter='blur(1px) '
             />
             <ModalContent isOpen={isOpen} onClose={onClose}
                           mt={mt}

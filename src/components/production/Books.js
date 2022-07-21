@@ -3,12 +3,14 @@ import {
     Text, Flex, Box, Center,
 } from '@chakra-ui/react';
 import SVGBooks from "../../templates/svg/home-page/SVGBooks";
+import useWindowWidth from "../window";
 
 
 const Books = () => {
+    const w = useWindowWidth()
     let fsH='34px'
     let fs = '18px'
-    if (window.innerWidth < 520){
+    if (w < 520){
         fsH='22px'
         fs='16px'
     }
@@ -35,6 +37,8 @@ const Books = () => {
                 <Box
                     align={'left'}
                     maxWidth={'500px'}
+                    minHeight={'400px'}
+                    pb={'40px'}
                 >
                     <Center >
                         <Text
@@ -45,10 +49,10 @@ const Books = () => {
                             fontFamily={'CasperBoldItalic'}
                             mt={'5px'}
                         >
-                            Зачем обращаться к адвокату или юристу?
+                            Зачем обращаться к юристу?
                         </Text>
                     </Center>
-                    <Text align={'justify'} fontSize={fs} p={'2vw'} >
+                    <Text align={'justify'} fontSize={fs} p={'1vw'} >
                         Сегодня никто не застра&shy;хован от ситуаций,
                         в кото&shy;рых может по&shy;требо&shy;ваться юри&shy;дичес&shy;кая по&shy;мощь.
                         Непра&shy;вомерный иск от ба&shy;нка, се&shy;мей&shy;ный кон&shy;фликт или труд&shy;ности
@@ -62,12 +66,12 @@ const Books = () => {
 
     let padAll = '5vw'
 
-    if (window.innerWidth < 600){
+    if (w < 600){
         padAll = '5vw'
     }
 
 
-    if (window.innerWidth < 1000){
+    if (w < 1000){
         picture = <Box
             w={'90%'}
             color={'#2d334a'}

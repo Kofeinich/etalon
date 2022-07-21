@@ -3,12 +3,14 @@ import {
     Text, Flex, Box, Center,
 } from '@chakra-ui/react';
 import SVGConnection from "../../templates/svg/home-page/SVGConnection";
+import useWindowWidth from "../window";
 
 const Connection = () => {
 
+    const w = useWindowWidth()
     let fsH='34px'
     let fs = '18px'
-    if (window.innerWidth < 520){
+    if (w < 520){
         fsH='22px'
         fs='16px'
     }
@@ -60,12 +62,12 @@ const Connection = () => {
 
     let padAll = '5vw'
 
-    if (window.innerWidth < 600){
+    if (w < 600){
         padAll = '5vw'
     }
 
 
-    if (window.innerWidth < 1000){
+    if (w < 1000){
         picture = <Box
             w={'90%'}
             color={'#2d334a'}
