@@ -204,7 +204,9 @@ export default function DrawerWrapper({
                                         cursor: 'pointer',
                                     }}
                                 >
-                                    <WhatsAppIcon fontSize={'large'} />
+                                    <a href="https://skobelkin.ru/whatsapp/79180675105?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82,+%D1%8F+%D1%81+%D1%81%D0%B0%D0%B9%D1%82%D0%B0">
+                                        <WhatsAppIcon fontSize={'large'} />
+                                    </a>
                                 </Box>
                                 <Box
                                     fontSize={'40px'}
@@ -214,7 +216,9 @@ export default function DrawerWrapper({
                                         cursor: 'pointer',
                                     }}
                                 >
-                                    <TelegramIcon fontSize={'large'} />
+                                    <a href="https://tlgg.ru/konyukhov_vladimir">
+                                        <TelegramIcon fontSize={'large'} />
+                                    </a>
                                 </Box>
                             </Flex>
                         </Flex>
