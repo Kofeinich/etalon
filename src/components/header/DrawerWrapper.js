@@ -138,18 +138,6 @@ export default function DrawerWrapper({
                                     Недвижимость
                                 </Button>
                             </Link>
-                            <Link to='/sudebnyye-spory'>
-                                <Button
-                                    fontSize={'20px'}
-                                    variant='text'
-                                    _hover={{
-                                        color: '#ffb300',
-                                        cursor: 'pointer',
-                                    }}
-                                >
-                                    Судебные споры
-                                </Button>
-                            </Link>
                             <Link to='/vzyskaniye-dolgov'>
                                 <Button
                                     fontSize={'20px'}

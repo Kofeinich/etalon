@@ -44,9 +44,11 @@ const Attachments = () => {
                 w={'61%'}
             >
                 <Box pb={'0px'} pt={'0px'}>
-                    <Box>
-                        <SvgBriefcase width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/arbitrazhnaya-praktika'>
+                        <Box>
+                            <SvgBriefcase width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Center h={'60px'}>
                         <Link to='/arbitrazhnaya-praktika'>
                             <Button variant='text'
@@ -68,9 +70,11 @@ const Attachments = () => {
                     </Text>
                 </Box >
                 <Box pb={'0px'}  pt={'0px'}>
-                    <Box>
-                        <SvgReceipt width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/semeynyye-spory'>
+                        <Box>
+                            <SvgReceipt width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Center h={'60px'}>
                         <Link to='/semeynyye-spory'>
                             <Button variant='text'
@@ -101,9 +105,11 @@ const Attachments = () => {
                 w={'61%'}
             >
                 <Box pb={'0px'} pt={'0px'}>
-                    <Box>
-                        <SvgPeople width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/nasledstvennyye-spory'>
+                        <Box>
+                            <SvgPeople width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Center h={'60px'}>
                         <Link to='/nasledstvennyye-spory'>
                             <Button variant='text'
@@ -125,9 +131,11 @@ const Attachments = () => {
                     </Text>
                 </Box>
                 <Box pb={'0px'} pt={'0px'}>
-                    <Box>
-                        <SvgAlarmFill width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/vzyskaniye-dolgov'>
+                        <Box>
+                            <SvgAlarmFill width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Center h={'60px'}>
                         <Link to='/vzyskaniye-dolgov'>
                             <Button variant='text'
@@ -152,9 +160,11 @@ const Attachments = () => {
                 </Box >
             </Grid>
             <Box pb={'0px'} pt={'0px'} mt={'30px'}>
-                <Box>
-                    <SvgEstate width={48} height={48} fill={'#272343'}/>
-                </Box>
+                <Link to='/sdelki-s-nedvizhimostyu'>
+                    <Box>
+                        <SvgEstate width={48} height={48} fill={'#272343'}/>
+                    </Box>
+                </Link>
                 <Center h={'60px'}>
                     <Link to='/sdelki-s-nedvizhimostyu'>
                         <Button variant='text'
@@ -197,9 +207,11 @@ const Attachments = () => {
                 pr={padAll}
             >
                 <Box mb={'40px'} mt={'40px'}>
-                    <Box>
-                        <SvgBriefcase width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/arbitrazhnaya-praktika'>
+                        <Box>
+                            <SvgBriefcase width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Link to='/arbitrazhnaya-praktika'>
                         <Button variant='text'
                                 fontSize={'22px'}
@@ -221,9 +233,11 @@ const Attachments = () => {
                     </Center>
                 </Box >
                 <Box mb={'40px'} mt={'0px'}>
-                    <Box>
-                        <SvgReceipt width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/semeynyye-spory'>
+                        <Box>
+                            <SvgReceipt width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Link to='/semeynyye-spory'>
                         <Button variant='text'
                                 fontSize={'22px'}
@@ -246,9 +260,11 @@ const Attachments = () => {
                     </Center>
                 </Box>
                 <Box mb={'40px'} mt={'40px'}>
-                    <Box>
-                        <SvgEstate width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/sdelki-s-nedvizhimostyu'>
+                        <Box>
+                            <SvgEstate width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Link to='/sdelki-s-nedvizhimostyu'>
                         <Button variant='text'
                                 fontSize={'22px'}
@@ -273,9 +289,11 @@ const Attachments = () => {
                     </Center>
                 </Box>
                 <Box pb={'40px'} pt={'0px'}>
-                    <Box>
-                        <SvgPeople width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/nasledstvennyye-spory'>
+                        <Box>
+                            <SvgPeople width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Link to='/nasledstvennyye-spory'>
                         <Button variant='text'
                                 fontSize={'22px'}
@@ -297,9 +315,11 @@ const Attachments = () => {
                     </Center>
                 </Box>
                 <Box pb={'40px'} pt={'0px'}>
-                    <Box>
-                        <SvgAlarmFill width={48} height={48} fill={'#272343'}/>
-                    </Box>
+                    <Link to='/vzyskaniye-dolgov'>
+                        <Box>
+                            <SvgAlarmFill width={48} height={48} fill={'#272343'}/>
+                        </Box>
+                    </Link>
                     <Link to='/vzyskaniye-dolgov'>
                         <Button variant='text'
                                 fontSize={'22px'}

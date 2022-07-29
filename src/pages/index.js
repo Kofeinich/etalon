@@ -9,14 +9,13 @@ import { chakra } from '@chakra-ui/react';
 import About from "../components/about/About";
 import Production from "../components/production/Production";
 import Attachments from "../components/attachments/Attachments";
-import useWindowWidth from "../components/window";
 
 
 const IndexPage = () => {
 
       return (
           <chakra.section id={'ind'} about={'Адвокат, юрист поможет в Новороссийске и Краснодарском крае'}>
-                <Seo title="Юридические услуги в Новороссийске"/>
+                <Seo title="Юридические услуги в Новороссийске" meta={[{name: "yandex-verification", content: "226191450c33932b" }]}/>
                 <Header/>
                 <Profile/>
                 <About/>
