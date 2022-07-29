@@ -57,6 +57,7 @@ const Attachments = () => {
                                         color: '#ffb300',
                                         cursor: 'pointer',
                                     }}
+                                    position={'static'}
                             >
                                 Арбитраж
                             </Button>
@@ -83,6 +84,7 @@ const Attachments = () => {
                                         color: '#ffb300',
                                         cursor: 'pointer',
                                     }}
+                                    position={'static'}
                             >
                                 Семейные споры
                             </Button>
@@ -118,6 +120,7 @@ const Attachments = () => {
                                         color: '#ffb300',
                                         cursor: 'pointer',
                                     }}
+                                    position={'static'}
                             >
                                 Наследственные споры
                             </Button>
@@ -144,6 +147,7 @@ const Attachments = () => {
                                         color: '#ffb300',
                                         cursor: 'pointer',
                                     }}
+                                    position={'static'}
                             >
                                 Взыскание долгов <br/> и иные споры
                             </Button>
@@ -173,6 +177,7 @@ const Attachments = () => {
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
+                                position={'static'}
                         >
                             Недвижимость
                         </Button>
@@ -219,6 +224,7 @@ const Attachments = () => {
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
+                                position={'static'}
                         >
                             Арбитраж
                         </Button>
@@ -245,6 +251,7 @@ const Attachments = () => {
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
+                                position={'static'}
                         >
                             Семейные споры
                         </Button>
@@ -272,6 +279,7 @@ const Attachments = () => {
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
+                                position={'static'}
                         >
                             Недвижимость
                         </Button>
@@ -301,6 +309,7 @@ const Attachments = () => {
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
+                                position={'static'}
                         >
                             Наследственные споры
                         </Button>
@@ -329,6 +338,7 @@ const Attachments = () => {
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
+                            position={'static'}
                         >
                             Взыскание долгов <br/>и иные споры
                         </Button>

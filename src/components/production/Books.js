@@ -48,6 +48,7 @@ const Books = () => {
                             mb={'0px'}
                             fontFamily={'CasperBoldItalic'}
                             mt={'5px'}
+                            mr={'15px'}
                         >
                             Зачем обращаться к юристу?
                         </Text>

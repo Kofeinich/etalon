@@ -13,7 +13,10 @@ export default function Header() {
             bg={'white'}
             px="2"
             py="6"
-            z-index='5000'
+            left={'0'}
+            right={'0'}
+            top={'0'}
+            z-index={1}
             align="center"
             text-decoration='none'
             justify="space-between"

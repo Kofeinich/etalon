@@ -16,8 +16,8 @@ const IndexPage = () => {
       return (
           <chakra.section id={'ind'} about={'Адвокат, юрист поможет в Новороссийске и Краснодарском крае'}>
                 <Seo title="Юридические услуги в Новороссийске" meta={[{name: "yandex-verification", content: "226191450c33932b" }]}/>
-                <Header/>
-                <Profile/>
+              <Profile/>
+              <Header/>
                 <About/>
                 <Production/>
                 <Attachments/>

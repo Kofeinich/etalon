@@ -14,8 +14,8 @@ const Production = () => {
         <VStack
             mt={'5vh'}
             mb={'5vh'}
-            pt={'20px'}
-            pb={'20px'}
+            pt={'50px'}
+            pb={'50px'}
             divider={<StackDivider/>}
             spacing={3}
             align='stretch'
