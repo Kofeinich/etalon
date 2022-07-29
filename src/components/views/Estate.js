@@ -4,7 +4,7 @@ import SVGEstate from "../../templates/svg/svg-views/SVGEstate";
 import useWindowWidth from "../window";
 
 const Estate = () => {
-    let mt='10vh'
+    let mt='5vh'
     let fsH='36px'
     let fs = 'lg'
     let fs2 = '22px'
