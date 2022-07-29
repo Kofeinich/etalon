@@ -145,7 +145,7 @@ const Attachments = () => {
                                         cursor: 'pointer',
                                     }}
                             >
-                                Взыскание долгов
+                                Взыскание долгов <br/> и иные споры
                             </Button>
                         </Link>
                     </Center>
@@ -321,14 +321,16 @@ const Attachments = () => {
                         </Box>
                     </Link>
                     <Link to='/vzyskaniye-dolgov'>
-                        <Button variant='text'
+                        <Button
+                            mt={'11px'}
+                            variant='text'
                                 fontSize={'22px'}
                                 _hover={{
                                     color: '#ffb300',
                                     cursor: 'pointer',
                                 }}
                         >
-                            Взыскание долгов
+                            Взыскание долгов <br/>и иные споры
                         </Button>
                     </Link>
                     <Center pl={'5vw'} pr={'5vw'} pt={'2vw'}>

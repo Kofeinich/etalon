@@ -114,6 +114,18 @@ export default function DrawerWrapper({
                                     Семейные споры
                                 </Button>
                             </Link>
+                            <Link to='/vzyskaniye-dolgov'>
+                                <Button
+                                    fontSize={'20px'}
+                                    variant='text'
+                                    _hover={{
+                                        color: '#ffb300',
+                                        cursor: 'pointer',
+                                    }}
+                                >
+                                    Взыскание долгов
+                                </Button>
+                            </Link>
                             <Link to='/nasledstvennyye-spory'>
                                 <Button
                                     fontSize={'20px'}
@@ -136,18 +148,6 @@ export default function DrawerWrapper({
                                     }}
                                 >
                                     Недвижимость
-                                </Button>
-                            </Link>
-                            <Link to='/vzyskaniye-dolgov'>
-                                <Button
-                                    fontSize={'20px'}
-                                    variant='text'
-                                    _hover={{
-                                        color: '#ffb300',
-                                        cursor: 'pointer',
-                                    }}
-                                >
-                                    Взыскание долгов
                                 </Button>
                             </Link>
                         </VStack>

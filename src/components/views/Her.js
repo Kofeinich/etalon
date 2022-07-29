@@ -29,12 +29,7 @@ const Her = () => {
                 fontFamily={'CasperRegular'}
                 mb={mbx}
             >
-                <Flex
-                    justify={'center'}
-                    w={'100vw'}
-                >
-                        <Text m={'0px'} w={'100%'} color={'#ffb300'} align='center' fontFamily={'CasperBold'} fontSize={fsH}>Практика по наследственным спорам</Text>
-                </Flex>
+
 
 
             </Box>
